@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+        <title>Habit</title>
+    </head>
+
+    <body>
+        <h1>Habit</h1>
+        <p><a href="/version1/">Version 1</a></p>
+        <p><a href="/version2/">Version 2</a></p>
+
+        <h2>One color for CSS: {{ colorone.color }}</h2>
+        <p>Random number: {{ randomnumber }}</p>
+        <p>emotions amount: {{ emotions }}</p>
+        <p>test sample: {{ test_sample }}</p>
+        <p>positive emotion 1: {{ positive_emotion_1 }}</p>
+        <p>positive emotion name 1: {{ positive_emotion_name_1 }}</p>
+        <p>positive emotions list: {{ positive_emotions_list }}</p>
+
+        {% for i in positive_emotions_list %}
+            <p>{{ i }}</p>
+        {% endfor %}
+        
+        <ul>
+            <li>emotion 1</li>
+            <li>emotion 2</li>
+            <li>emotion 3</li>
+        </ul>
+        <ul>
+            <li>emotion 4</li>
+            <li>emotion 5</li>
+            <li>emotion 6</li>
+        </ul>
+        {% for i in colors %}
+            <p>{{ i.hexa }}</p>
+            <p>test</p>
+        {% endfor %}
+    </body>
+
+
+</html>

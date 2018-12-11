@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Habit</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;    
+            }
+            #container {
+                width: inherit;
+                height: inherit;
+                margin: 0;
+                padding: 0;
+                background-image: linear-gradient(to right, yellow , green);
+            }
+            h1, h2, h3, h4, h5, p {
+                font-family: 'Noto Serif SC'; 
+                margin: 0;
+                padding-top: 1%;
+                padding-left: 2%;
+                text-align: left;
+            }
+
+            #center-box {
+                background-color: red;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                text-align: center;
+            }
+            #emotions-button {
+                background-color: pink;
+            }
+            #colors-button {
+                background-color: yellow;
+            }
+
+            .button-box {
+               text-align:center;
+               margin-top:20px;
+            }
+
+            #corner-logo a {
+                color: black;
+                text-shadow: 1px 1px black;
+            }
+
+            .btn-xlarge {
+                padding: 18px 28px;
+                font-size: 22px;
+                border-radius: 8px;
+            }
+
+            #emotions {
+                text-align: center;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="corner-logo">
+                <h1><a href="/version2/">Habit</a></h1>
+            </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
